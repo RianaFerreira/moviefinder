@@ -2,6 +2,10 @@ require 'sinatra'
 require 'httparty'
 require 'json'
 
+get '/' do
+  erb :form
+end
+
 get '/movie' do
   # create a file to store the movie titles the user searched for
   @title_searched = File.new('movie.csv', 'a+')
