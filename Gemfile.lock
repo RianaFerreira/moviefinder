@@ -15,4 +15,3 @@ PLATFORMS
 
 DEPENDENCIES
   sinatra
-  wdm (~> 0.1.0)
