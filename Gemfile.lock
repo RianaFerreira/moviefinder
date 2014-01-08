@@ -1,0 +1,9 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  wdm (~> 0.1.0)
