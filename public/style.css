@@ -1,0 +1,244 @@
+html, body { height: 100%;}
+
+body {
+  background: url('reel.jpg') center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Helvetica;;
+  font-size: 1em;
+  color: white;
+  width: 100%;
+  margin: auto;
+}
+
+h1, h2 {
+  font-family: 'Monoton', cursive;
+  margin: auto;
+  text-align: center;
+  text-shadow: black .1em .1em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  font-weight: 700;
+  font-size: 1.2em;
+  text-shadow: black -.1em .1em;
+}
+
+/*----------------------------------------------*/
+/* Header                                       */
+/*----------------------------------------------*/
+
+header {
+  padding: 2em;
+}
+
+h1 {
+  display: inline-block;
+  width: 80%;
+}
+
+/*----------------------------------------------*/
+/* Logo                                         */
+/*----------------------------------------------*/
+
+#logo {
+  position: relative;
+  display: inline-block;
+  width: 5em;
+  line-height: 1em;
+  margin: 1em;
+}
+
+.reel {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: .8em;
+}
+
+#box {
+  width: 3.4em;
+  height: 2em;
+  border-radius: .3em;
+}
+
+#lens {
+  margin: .5em 0;
+  width: 1em;
+  height: 1em;
+  border-radius: .3em;
+}
+
+.reel,
+#box,
+#lens {
+  postion: relative;
+  display: inline-block;
+  box-shadow: rgba(255, 255, 255, .7) -.3em .3em;
+  border-top: .2em solid white;
+  background-color: rgba(178, 115, 92, .8);
+}
+
+/*----------------------------------------------*/
+/* Navigation menu                              */
+/*----------------------------------------------*/
+
+.menu,
+.menu a,
+.menu ul,
+.menu li {
+  display: inline;
+}
+
+.menu {
+  line-height: 1.5em;
+  padding: 15px;
+  margin-right: 0;
+}
+
+.menu a,
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+.menu li {
+  margin-right: 2em;
+  float: right;
+}
+
+/*----------------------------------------------*/
+/* Search form                                  */
+/*----------------------------------------------*/
+
+form{
+  padding: 30px;
+  border-bottom: 1px dotted #f9f4e8;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.search{
+  width: 50%;
+  line-height: 2em;
+  margin-right: 10px;
+  box-shadow: rgb(84, 54, 44) -.3em .3em;
+}
+
+/*----------------------------------------------*/
+/* Search json data return from OMDB            */
+/*----------------------------------------------*/
+
+h2{
+  display: block;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+article {
+  padding: 2em;
+}
+
+.movieInfo,
+aside {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  min-height: 21.25rem;
+  min-width: 20em;
+  padding: 0 1em;
+}
+
+.movieInfo {
+  width: 60%;
+  background-color: rgba(84, 54, 44, .5);
+}
+
+.movieInfo .label {
+  display: inline-block;
+  font-weight: 700;
+  width: 15%;
+  text-align: right;
+  padding-right: 1em;
+  vertical-align: top;
+}
+
+.movieInfo .data {
+  display: inline-block;
+  font-weight: 200;
+  text-align: justify;
+  letter-spacing: 0.1em;
+  width: 75%;
+}
+
+aside {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+aside img {
+  min-height: 21.25rem;
+}
+
+/*----------------------------------------------*/
+/* Search history                               */
+/*----------------------------------------------*/
+
+/*Index Page Styles*/
+.searchIndex{
+  padding: 10px;
+  margin: auto;
+}
+
+.searchList {
+  width: 50%;
+  padding: 1em;
+  margin: 0 auto;
+  text-align: justify;
+  background-color: rgba(84, 54, 44, .5);
+}
+
+.searchList a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+
+.searchList a:nth-child(2n+1){
+  float: right;
+}
+
+div .clear{
+  padding-left: 16px;
+  margin-top: 2em;
+  margin-left: 80%;
+  text-shadow: 1px 1px 0 #fff;
+  font:11px/normal sans-serif;
+  color: #333;
+}
+
+/*----------------------------------------------*/
+/* About                                        */
+/*----------------------------------------------*/
+
+.welcome {
+  padding: 20px;
+  margin: 0 auto;
+  width: 50%;
+  background-color: rgba(84, 54, 44, .5);
+  line-height: 1.5em;
+  letter-spacing: .1em;
+  text-align: justify;
+  font-weight: 200;
+}
