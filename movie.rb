@@ -1,8 +1,11 @@
 require 'sinatra'
+#require 'sinatra/reloader'
+#require 'pry'
 require 'httparty'
 require 'json'
 
 get '/' do
+  @search_success = true
   erb :form
 end
 
@@ -27,14 +30,15 @@ get '/movie' do
 
     # only save the search if the JSON result was successful
     if @movie_info_hash["Response"] != "False"
+      # set search as being successful
+      @search_success = true
       # save the search input
       @title_searched.puts(@movie_title)
       # close the file
       @title_searched.close()
     else
-      # if the response returns and error
-      # clear the @movie_title and don't render the form data
-      @movie_title = nil
+      # if the JSON result fails don't render the empty form
+      @search_success = false
     end
   end
   # call the form to display the input field

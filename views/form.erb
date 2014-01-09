@@ -5,7 +5,7 @@
 </form>
 
 <!-- display a the results for the search -->
-<% if @movie_title %>
+<% if @movie_title && @search_success %>
   <h2><%= @movie_title %></h2>
   <article>
     <section class="movieInfo">
@@ -30,7 +30,7 @@
         <span class="data"><%= @movie_info_hash['Director'] %></span>
       </p>
       <p>
-        <span class="label">Genre</span>
+        <span class=%"label">Genre</span>
         <span class="data"><%= @movie_info_hash["Genre"] %></span>
       </p>
       <p>
@@ -46,8 +46,12 @@
       <img src='<%= @movie_info_hash['Poster'] %>'>
     </aside>
   </article>
-<% else %>
-  <p class="searchList">Sorry the movie could not be found by OMDB.</p>
+
 <% end %>
+
+<% if !@search_success %>
+<p class="searchList">Sorry the movie could not be found by OMDB.</p>
+<% end %>
+
 
 <!-- where do you get the box office revenue? -->
