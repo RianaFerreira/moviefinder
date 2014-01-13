@@ -1,24 +1,3 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $('#btn').click(function(){
-    console.log('clicked');
-    $.getJSON('http://www.omdbapi.com/',{"t":$('#t').val()},function(data){
-      console.log(data);
-      $('#poster > img').attr('src', data.Poster);
-
-    });
-  });
-});
-</script>
-
-   <input id="t" />
-   <button value="search" id="btn">search</button>
-
-     <ul>
-       <li id="poster"><img/></li>
-    </ul>
-
 <!-- display the search field and the button to submit the search request to the server -->
 <form method="GET" action="/movie">
   <input class="search" name="title" placeholder="Movie Title">
