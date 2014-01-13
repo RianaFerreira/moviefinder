@@ -16,3 +16,7 @@ Movie Finder allows you to search for any movie title. A server side JSON object
 * MDN CSS https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 * HTML5 Doctor http://html5doctor.com/
 * One Extra Pixel http://gallery.onextrapixel.com/
+
+## Wishlist
+1 Use AWS to store copies of the poster images.
+Hotlinking blocked by IMDB from Heroku application, but works from local server. Poster mages are not being rendered for the movie search. http://stackoverflow.com/questions/11044010/imdb-poster-url-returns-referral-denied
