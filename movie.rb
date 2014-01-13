@@ -9,6 +9,13 @@ get '/' do
   erb :form
 end
 
+get '/imgz' do
+  @target_url = params[:url]
+  content_type 'image/jpeg'
+  response = HTTParty.get(@target_url, :headers => {'Referer' => 'http://www.imdb.com'})
+  response.parsed_response
+end
+
 get '/movie' do
   # create a file to store the movie titles the user searched for
   @title_searched = File.new('movie.csv', 'a+')
